@@ -19,3 +19,93 @@ $font-three: 'Roboto Slab', serif;
 *, *::before, *::after {
     box-sizing: border-box;
 }
+/*grid*/
+.col-1 {flex: 8.333%;}
+.col-2 {flex: 16.667%;}
+.col-3 {flex: 25%;}
+.col-4 {flex: 33.333%;}
+.col-5 {flex: 41.667%;}
+.col-6 {flex: 50%;}
+.col-7 {flex: 58.333%;}
+.col-8 {flex: 66.667%;}
+.col-9 {flex: 75%;}
+.col-10 {flex: 83.333%;}
+.col-11 {flex: 91.667%;}
+.col-12 {flex: 100%;}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: $color-one;
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2em;
+    background: $color-three;
+}
+div{
+    border: 1px solid;
+}
+/*navigation*/
+.top-nav{
+    display: flex;
+    justify-content: flex-end;
+    li{
+        list-style: none;
+        margin-right: 1em;
+    }
+}
+/*header*/
+header{
+    position: relative;
+    height: 100vh;
+    background: url("/images/Background_Image.png");
+    background-position: center, center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $color-one;
+
+}
+
+.inner{
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+.inner-top-text{
+    font-size: 40px;
+    font-style: italic;
+    letter-spacing: -1px;
+    font-family: $font-one;
+    text-transform: capitalize;
+}
+.inner-bottom-text{
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -1.88px;
+    font-family: $font-two;
+    margin: 0 0 40px 0;
+}
+.golden{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 1.3px;
+    color: $color-three;
+}
