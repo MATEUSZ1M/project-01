@@ -11,6 +11,7 @@ $color-nine: #00aced;
 $color-ten: #3b5998;
 $color-eleven: #555555;
 $color-twelve: #cb2028;
+$color-three-ten: #f7f7f7;
 /*fonts*/
 $font-one: 'Dancing Script', cursive;
 $font-two: 'Montserrat', sans-serif;
@@ -22,7 +23,7 @@ $font-three: 'Roboto Slab', serif;
 /*grid*/
 .col-1 {flex: 8.333%;}
 .col-2 {flex: 16.667%;}
-.col-3 {flex: 25%;}
+.col-3 {width: 29%;}
 .col-4 {flex: 33.333%;}
 .col-5 {flex: 41.667%;}
 .col-6 {flex: 50%;}
@@ -163,3 +164,33 @@ header{
 }
 /*services*/
 
+/*portfolio*/
+.portfolio{
+    background: $color-three-ten;
+}
+
+.row-portfolio{
+    justify-content: space-between;
+}
+
+.tile{
+    margin-bottom: 40px;
+    background: $color-one;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.tile-title{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+    color: $color-four;
+    margin-bottom: 0;
+    font-family: $font-two;
+}
+
+.tile-q{
+    font-style: italic;
+    margin-top: 0;
+}

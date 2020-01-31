@@ -17,8 +17,7 @@
 }
 
 .col-3 {
-  -ms-flex: 25%;
-      flex: 25%;
+  width: 29%;
 }
 
 .col-4 {
@@ -214,4 +213,38 @@ header::before {
 }
 
 /*services*/
+/*portfolio*/
+.portfolio {
+  background: #f7f7f7;
+}
+
+.row-portfolio {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.tile {
+  margin-bottom: 40px;
+  background: #ffffff;
+}
+
+.tile img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tile-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  color: #333333;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tile-q {
+  font-style: italic;
+  margin-top: 0;
+}
 /*# sourceMappingURL=style.css.map */
