@@ -69,6 +69,7 @@
 body {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .row {
@@ -83,6 +84,27 @@ body {
   margin: 0 auto;
 }
 
+section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -1px;
+  color: #222222;
+  margin-bottom: 0;
+}
+
+.section-q {
+  font-size: 16px;
+  color: #777777;
+  font-style: italic;
+  padding-bottom: 50px;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -95,6 +117,17 @@ a {
   font-size: 18px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+}
+
+i {
+  font-size: 41px;
+  color: #fed136;
+  width: 100px;
+  height: 100px;
+  line-height: 90px !important;
+  border: solid #fed136 5px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 div {
@@ -179,4 +212,6 @@ header::before {
   color: #fed136;
   font-family: "Dancing Script", cursive;
 }
+
+/*services*/
 /*# sourceMappingURL=style.css.map */
