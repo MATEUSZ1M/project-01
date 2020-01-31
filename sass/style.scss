@@ -12,7 +12,7 @@ $color-ten: #3b5998;
 $color-eleven: #555555;
 $color-twelve: #cb2028;
 /*fonts*/
-$font-one: 'Noto Serif TC', serif;
+$font-one: 'Dancing Script', cursive;
 $font-two: 'Montserrat', sans-serif;
 $font-three: 'Roboto Slab', serif;
 /*Global*/
@@ -53,6 +53,9 @@ a{
     display: inline-block;
     padding: 1em 2em;
     background: $color-three;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: $font-two;
 }
 div{
     border: 1px solid;
@@ -64,8 +67,17 @@ div{
     li{
         list-style: none;
         margin-right: 1em;
+        text-transform: uppercase;
+        font-family: $font-two;
+        line-height: 41px;
+        font-weight: 400;
     }
 }
+.before{
+    z-index: 1;
+}
+
+
 /*header*/
 header{
     position: relative;
@@ -75,7 +87,16 @@ header{
     background-size: cover;
     background-attachment: fixed;
     color: $color-one;
-
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: $color-seven;
+        opacity: .5;
+    }
 }
 
 .inner{
@@ -91,7 +112,7 @@ header{
     font-size: 40px;
     font-style: italic;
     letter-spacing: -1px;
-    font-family: $font-one;
+    font-family: $font-three;
     text-transform: capitalize;
 }
 .inner-bottom-text{
@@ -103,9 +124,11 @@ header{
     margin: 0 0 40px 0;
 }
 .golden{
-    font-size: 26px;
+    font-size: 36px;
+    margin: 0;
     font-weight: 400;
-    line-height: 41px;
+    line-height: 51px;
     letter-spacing: 1.3px;
     color: $color-three;
+    font-family: $font-one;
 }
