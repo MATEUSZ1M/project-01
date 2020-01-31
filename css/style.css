@@ -118,7 +118,7 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-i {
+.icon {
   font-size: 41px;
   color: #fed136;
   width: 100px;
@@ -127,10 +127,6 @@ i {
   border: solid #fed136 5px;
   border-radius: 50%;
   text-align: center;
-}
-
-div {
-  border: 1px solid;
 }
 
 /*navigation*/
@@ -212,7 +208,6 @@ header::before {
   font-family: "Dancing Script", cursive;
 }
 
-/*services*/
 /*portfolio*/
 .portfolio {
   background: #f7f7f7;
@@ -246,5 +241,44 @@ header::before {
 .tile-q {
   font-style: italic;
   margin-top: 0;
+  padding-bottom: 20px;
+}
+
+/*footer*/
+.footer-text {
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.35px;
+}
+
+.center {
+  position: relative;
+  margin: 0 auto;
+}
+
+.center i {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  margin: 20px 0;
+}
+
+.left {
+  position: absolute;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer-text {
+  letter-spacing: -0.35px;
+  font-weight: 400;
+  color: #555555;
+  font-size: 14px;
+  line-height: 55px;
 }
 /*# sourceMappingURL=style.css.map */

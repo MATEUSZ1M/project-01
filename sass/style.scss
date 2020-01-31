@@ -65,7 +65,6 @@ section{
     font-style: italic;
     padding-bottom: 50px;
 }
-
 a{
     text-decoration: none;
     color: $color-one;
@@ -78,8 +77,7 @@ a{
     text-transform: uppercase;
     font-family: $font-two;
 }
-
-i{
+.icon{
     font-size: 41px;
     color: $color-three;
     width: 100px;
@@ -88,9 +86,6 @@ i{
     border: solid $color-three 5px;
     border-radius: 50%;
     text-align: center;
-}
-div{
-    border: 1px solid;
 }
 /*navigation*/
 .top-nav{
@@ -108,7 +103,6 @@ div{
 .before{
     z-index: 1;
 }
-
 /*header*/
 header{
     position: relative;
@@ -129,7 +123,6 @@ header{
         opacity: .5;
     }
 }
-
 .inner{
     top: 50%;
     left: 50%;
@@ -162,8 +155,6 @@ header{
     color: $color-three;
     font-family: $font-one;
 }
-/*services*/
-
 /*portfolio*/
 .portfolio{
     background: $color-three-ten;
@@ -193,4 +184,37 @@ header{
 .tile-q{
     font-style: italic;
     margin-top: 0;
+    padding-bottom: 20px;
+}
+/*footer*/
+.footer-text{
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.35px;
+}
+.center{
+    position: relative;
+    margin: 0 auto;
+    i{
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: $color-one;
+        background: $color-seven;
+        border-radius: 50%;
+        margin-right: 0.5em;
+        margin: 20px 0;
+    }
+}
+.left{
+    position: absolute;
+    align-content: center;
+}
+.footer-text{
+    letter-spacing: -0.35px;
+    font-weight: 400;
+    color: $color-eleven;
+    font-size: 14px;
+    line-height: 55px;
 }
