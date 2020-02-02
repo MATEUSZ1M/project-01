@@ -33,13 +33,15 @@ $font-three: 'Roboto Slab', serif;
 .col-10 {flex: 83.333%;}
 .col-11 {flex: 91.667%;}
 .col-12 {flex: 100%;}
-
+/*transition*/
+$transition: all 0.3s;
 body{
     margin: 0;
     padding: 0;
     text-align: center;
 }
-.row{
+.row,
+ul{
     display: flex;
     flex-wrap: wrap;
 }
@@ -68,6 +70,9 @@ section{
 a{
     text-decoration: none;
     color: $color-one;
+    &:hover{
+        color: $color-nine;
+    }
 }
 .btn{
     display: inline-block;
@@ -76,6 +81,11 @@ a{
     font-size: 18px;
     text-transform: uppercase;
     font-family: $font-two;
+    transition: $transition;
+    &:hover{
+        background: $color-nine;
+        color: $color-one;
+    }
 }
 .icon{
     font-size: 41px;
@@ -88,15 +98,14 @@ a{
     text-align: center;
 }
 /*navigation*/
-.top-nav{
+.linear-list{
     display: flex;
     justify-content: flex-end;
     li{
         list-style: none;
-        margin-right: 1em;
+        margin-right: 1.5em;
         text-transform: uppercase;
         font-family: $font-two;
-        line-height: 41px;
         font-weight: 400;
     }
 }
@@ -155,6 +164,27 @@ header{
     color: $color-three;
     font-family: $font-one;
 }
+/*services*/
+.services-item{
+    background: transparent;
+    transition: $transition;
+    padding: 20px;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+    }
+    p{
+        font-family: $font-three;
+        color: $color-six;
+        margin: 0;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.45px;
+        font-family: $font-two ;
+    }
+}
 /*portfolio*/
 .portfolio{
     background: $color-three-ten;
@@ -165,13 +195,25 @@ header{
 }
 
 .tile{
-    margin-bottom: 40px;
     background: $color-one;
-    img{
-        width: 100%;
-        object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.img-tile{
+    height: 300px;
+    overflow: hidden;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: $transition;
+            &:hover{
+            transform: scale(1.2);
+            opacity: 0.7;
+        }
     }
 }
+
 .tile-title{
     font-size: 18px;
     font-weight: 700;
@@ -203,8 +245,11 @@ header{
         color: $color-one;
         background: $color-seven;
         border-radius: 50%;
-        margin-right: 0.5em;
         margin: 20px 0;
+        transition: $transition;
+        &:hover{
+            transform: scale(1.3);
+        }
     }
 }
 .left{
@@ -217,4 +262,16 @@ header{
     color: $color-eleven;
     font-size: 14px;
     line-height: 55px;
+}
+
+footer{
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+}
+a{
+    span{
+        display: none;
+    }
 }
