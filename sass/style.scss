@@ -1,16 +1,11 @@
 /* Variables*/
 $color-one: #ffffff;
-$color-two:#222222;
 $color-three: #fed136;
 $color-four: #333333;
-$color-five: #737373;
 $color-six: #777777;
 $color-seven: #000000;
-$color-eight: #da2713;
 $color-nine: #00aced;
-$color-ten: #3b5998;
 $color-eleven: #555555;
-$color-twelve: #cb2028;
 $color-three-ten: #f7f7f7;
 /*fonts*/
 $font-one: 'Dancing Script', cursive;
@@ -101,6 +96,7 @@ a{
 .linear-list{
     display: flex;
     justify-content: flex-end;
+    padding: 0;
     li{
         list-style: none;
         margin-right: 1.5em;
@@ -169,15 +165,18 @@ header{
     background: transparent;
     transition: $transition;
     padding: 20px;
+    
     &:hover{
         transform: scale(1.1);
         box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
     }
+    
     p{
         font-family: $font-three;
         color: $color-six;
         margin: 0;
     }
+    
     h3{
         font-size: 18px;
         font-weight: 700;
@@ -202,12 +201,14 @@ header{
 .img-tile{
     height: 300px;
     overflow: hidden;
-        img{
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            transition: $transition;
-            &:hover{
+        
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: $transition;
+            
+        &:hover{
             transform: scale(1.2);
             opacity: 0.7;
         }
@@ -237,6 +238,7 @@ header{
 .center{
     position: relative;
     margin: 0 auto;
+    
     i{
         font-size: 18px;
         width: 40px;
@@ -247,6 +249,7 @@ header{
         border-radius: 50%;
         margin: 20px 0;
         transition: $transition;
+        
         &:hover{
             transform: scale(1.3);
         }
@@ -254,7 +257,6 @@ header{
 }
 .left{
     position: absolute;
-    align-content: center;
 }
 .footer-text{
     letter-spacing: -0.35px;
@@ -264,14 +266,49 @@ header{
     line-height: 55px;
 }
 
-footer{
-    ul{
-        margin: 0;
-        padding: 0;
+.linear-list{
+        justify-content: center;
     }
-}
+
 a{
     span{
         display: none;
+    }
+}
+/*smartphone media q*/
+@media (max-width: 767px){
+    .row{
+        flex-direction: column;
+    }
+
+    .disapear{
+        display: none;
+    }
+
+    .col-3{
+        min-width: 350px;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    
+    .left{
+        position: relative;
+        order: 2;
+        justify-content: center;
+    }
+
+    header{
+        position: relative;
+    }
+    .golden{
+        font-size: 90px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .inner{
+        top: 80%;
     }
 }
