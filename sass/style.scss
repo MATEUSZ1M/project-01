@@ -103,6 +103,9 @@ a{
         text-transform: uppercase;
         font-family: $font-two;
         font-weight: 400;
+        &:last-of-type{
+            margin: 0;
+        }
     }
 }
 .before{
@@ -238,6 +241,14 @@ header{
 .center{
     position: relative;
     margin: 0 auto;
+   
+    .linear-list{
+        justify-content: center;
+    }
+    
+    ul{
+        margin: 0;
+    }
     
     i{
         font-size: 18px;
@@ -265,10 +276,6 @@ header{
     font-size: 14px;
     line-height: 55px;
 }
-
-.linear-list{
-        justify-content: center;
-    }
 
 a{
     span{
@@ -311,4 +318,27 @@ a{
     .inner{
         top: 80%;
     }
+
+    .linear-list{
+        justify-content: center;
+    }
 }
+    /*tablet media q*/
+
+    @media (min-width: 768px) and (max-width: 991px){
+        .col-3{
+            width: 45%;
+        }
+
+        .disapear-tablet{
+            display: none;
+        }
+
+        .left{
+            position: relative;
+        }
+
+        .footer-text{
+            text-align: left;
+        }
+    }
